@@ -44,18 +44,6 @@ services:
             - REDIS_PORT=6379
             - JWT_KEYS=awokawokawok
 
-    frontend:
-        build:
-            context: frontend/
-        container_name: frontend-vue
-        ports:
-            - 8080:8080
-            - 80:80
-        networks: 
-            - deploy
-        environment:
-            - VUE_APP_URL=http://localhost:2000     
-
 networks:
     deploy:
         driver: bridge
