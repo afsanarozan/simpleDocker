@@ -17,7 +17,7 @@ services:
         image: postgres
         container_name: postgres
         environment:
-            - POSTGRES_USER=postgres
+            - POSTGRES_USER=super
             - POSTGRES_PASSWORD=hahaha321
             - POSTGRES_DB=mydb
         networks: 
