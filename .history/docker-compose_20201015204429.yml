@@ -37,7 +37,7 @@ services:
         networks:
             - deploy
         environment: 
-            - DB_USER=super
+            - DB_USER=postgres
             - DB_DATABASE=mydb
             - DB_PASS=hahaha321
             - DB_HOST=postgres
