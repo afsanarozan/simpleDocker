@@ -45,7 +45,7 @@ services:
             - REDIS_PASS=redispass123
             - REDIS_PORT=6379
             - JWT_KEYS=awokawokawok
-            - SERVICEPORT=2000
+            - SERVICEPORT
 
     frontend:
         build:
