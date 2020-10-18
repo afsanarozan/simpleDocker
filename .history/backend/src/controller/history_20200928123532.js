@@ -6,7 +6,7 @@ history.all = async (req, res) => {
         const data = await model.GetAll()
         return res.status(200).json(data)
     } catch (error) {
-        return res.status(500).json("error cuk")
+        return res.status(500).json("terjadi Error")
     }
 }
 
