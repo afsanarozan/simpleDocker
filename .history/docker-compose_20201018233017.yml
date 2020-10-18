@@ -46,6 +46,7 @@ services:
             - REDIS_PORT=6379
             - JWT_KEYS=awokawokawok
             - SERVICEPORT=2000
+
         deploy:
             resources:
                 limits:

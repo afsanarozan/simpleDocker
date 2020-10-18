@@ -46,14 +46,15 @@ services:
             - REDIS_PORT=6379
             - JWT_KEYS=awokawokawok
             - SERVICEPORT=2000
-        deploy:
-            resources:
-                limits:
-                    cpus: '0.001'
-                    memory: 50M
-                reservations:
-                    cpus: '0.0001'
-                    memory: 20M    
+
+            deploy:
+                resources:
+                    limits:
+                        cpus: '0.001'
+                        memory: 50M
+                    reservations:
+                        cpus: '0.0001'
+                        memory: 20M    
 
     frontend:
         build:
